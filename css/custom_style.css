@@ -14,3 +14,53 @@
 .nav-wrapper.custom {
   background-color: #009688;
 }
+
+
+/*untuk perancangan dummy*/
+
+#custom_grid {
+  /*background-color: #8C9EFF;*/
+}
+
+
+/*------------------------*/
+
+#card_image {
+  /*background-color: #B388FF;*/
+}
+
+#card_image_hasil_cari {
+  height: 100px;
+}
+
+.cardview_title {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+.divider.custom {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.list_item_custom {
+  margin: 8px;
+  color: #3366BB;
+  text-decoration: underline;
+}
+
+.subhead_title {
+  margin-top: 48px;
+  margin-left: 16px;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.footer_setup {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.12);
+  font-size: 15px;
+}
+.href_black {
+  color: rgba(0, 0, 0, 0.87);
+}
