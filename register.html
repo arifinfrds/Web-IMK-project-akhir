@@ -1,93 +1,107 @@
 <html>
 
-  <head>
-    <style>
-      header{
-        width:100%;
-        position:absolute;
-        top:0;
-        left:0;
-        padding: 1em;
-        color: white;
-        text-align: left;
-        background-color: #009688;
-      }
-      article{
-        padding-top: 4em;
-        padding-left: 2em;
-        text-align: center;
-      }
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-      .form {
-          text-align: left;
-          width: 50%;
-          height: 200px;
-          float: left;
-      }
-      .text {
-          margin-left: 50%;
-          height: 200px;
-      }
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      input{
-        border-top-style: hidden;
-        border-right-style: hidden;
-        border-left-style: hidden;
-        border-bottom-style: ridge;
-         /*border-bottom-color: #FFC400;*/
-      }
+  <style>
+    header {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1em;
+      color: white;
+      text-align: left;
+      background-color: #009688;
+    }
 
-      .button{
-        background-color: #FFC400;
-        border: none;
-        color: white;
-        padding: 5px 12px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-      }
+    article {
+      padding-top: 4em;
+      padding-left: 2em;
+      text-align: center;
+    }
 
-      footer{
-        width:100%;
-        bottom:0;
-        left:0;
-        position:absolute;
-        padding: 1em;
-        color: white;
-        text-align: center;
-        background-color: #009688;
-      }
+    .form {
+      text-align: left;
+      width: 50%;
+      height: 200px;
+      float: left;
+    }
 
-    </style>
-  </head>
+    .text {
+      margin-left: 50%;
+      height: 200px;
+    }
 
-  <body>
-    <header>
-      Register
-    </header>
-    <article>
-      Know Programming Better With [Nama Aplikasi]
-      <br><br><br><br><br><br>
-      <div class="form">
-        <form action="" method="post">
-          <input type="text" name="email" placeholder="Email" />
-          <br><br>
-          <input type="password" name="passwd" placeholder="Password" />
-          <br><br>
-          <input type="submit" value="Submit!" class="button" />
-          <br><br>
-        </form>
-      </div>
-      <div class="text">
-          Already Have an Account?
-          <br><br>
-          <form action="login.html" method="post">
-            <input type="submit" value="Login!" class="button" />
-            <br><br>
-          </form>
-      </div>
-    </article>
-    <footer>&copy; Luthfi, Arifin, Levi 2017</footer>
-  </body>
+    input {
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: ridge;
+      /*border-bottom-color: #FFC400;*/
+    }
+
+    .button {
+      background-color: #FFC400;
+      border: none;
+      color: white;
+      padding: 5px 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    footer {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      padding: 1em;
+      color: white;
+      text-align: center;
+      background-color: #009688;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <header>
+    Register
+  </header>
+  <article>
+    Know Programming Better With [Nama Aplikasi]
+    <br><br><br><br><br><br>
+    <div class="form">
+      <form action="" method="post">
+        <input type="text" name="email" placeholder="Email" />
+        <br><br>
+        <input type="password" name="passwd" placeholder="Password" />
+        <br><br>
+        <input type="submit" value="Submit!" class="button" />
+        <br><br>
+      </form>
+    </div>
+    <div class="text">
+      Already Have an Account?
+      <br><br>
+      <form action="login.html" method="post">
+        <input type="submit" value="Login!" class="button" />
+        <br><br>
+      </form>
+    </div>
+  </article>
+  <footer>&copy; Luthfi, Arifin, Levi 2017</footer>
+</body>
 
 </html>
