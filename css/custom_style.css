@@ -61,6 +61,70 @@
   color: rgba(0, 0, 0, 0.12);
   font-size: 15px;
 }
+
 .href_black {
   color: rgba(0, 0, 0, 0.87);
+}
+
+.waves-effect.waves-light.btn.custom {
+  background-color: #FFC400;
+}
+.waves-effect.waves-light.btn.custom.1 {
+  background-color: #FFC400;
+}
+
+.container_12.custom {
+  margin-top: 24px;
+}
+
+#custom_hr {
+  border: 1px solid #FFFFFF;
+}
+
+.link {
+  color: #3366BB;
+  text-decoration: underline;
+}
+
+.card_view_header_title {
+  margin-top: 48px;
+  margin-left: 16px;
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.chip_container {
+  margin-bottom: 8px;
+}
+
+.img_penanya {
+  width: 24px;
+  height: 24px;
+}
+
+.info_user_header, .info_user_sub_header {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.info_user_header {
+  font-size: 15px;
+}
+
+.info_user_sub_header {
+  font-size: 13px;
+}
+
+.code_container {
+  font-family: 'Roboto Mono';
+  padding: 8px;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container_info_user_tanya_jawab {
+  margin: 8px;
+}
+
+#container_button_lain_detail_thread {
+  background-color: rgba(0, 0, 0, 0.1);
 }
