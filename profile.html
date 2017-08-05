@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link type="text/css" rel="stylesheet" href="css/min/960.css" media="screen,projection" />
+  <link rel="stylesheet" href="css/960-responsive.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/custom_style.css" media="screen,projection" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Roboto+Mono" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <title>Profile</title>
+
+</head>
+
+<body>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <!-- container buat navbar -->
+  <div class="container_24">
+    <!-- panjang navbar ngambil jatah 24 grid containernya -->
+    <div class="grid_24">
+      <nav class="nav-extended">
+        <div class="nav-wrapper custom">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
+        </div>
+        <div class="nav-content custom profile">
+          <div class="container_24">
+            <div class="grid_4">
+              <img class="img-circle" id="thumbnail_photo_profile" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Button_Icon_White.svg/1000px-Button_Icon_White.svg.png" alt="">
+            </div>
+            <div class="grid_20">
+              <span class="nav-title custom">Sundar Pichai</span><br>
+            </div>
+            <div class="grid_20">
+              <span class="nav-title subhead">Malang, Indonesia</span>
+            </div>
+
+          </div>
+          <a class="btn-floating btn-large halfway-fab waves-effect waves-light amber"><i class="material-icons">edit</i></a>
+        </div>
+      </nav>
+    </div>
+
+  </div>
+
+  <!-- handle navigation drawer saat screen mobile -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".button-collapse").sideNav();
+    })
+  </script>
+
+  <div class="container_12">
+    <div class="grid_12">
+      <div id="container_profile_info">
+        <p>Sundar Pichai</p>
+        <p>Malang, Indonesia</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container_12">
+
+    <!-- cardview 1 size 6 grid -->
+    <div class="grid_6">
+      <div class="card profile_floating">
+        <div class="card-content">
+          <p class="subhead_title">Basic Information</p>
+          <div class="divider custom"></div>
+          <table class="material_table">
+            <tr>
+              <th>Name</th>
+              <th>Sundar Pichai</th>
+              <tr>
+                <td>Place From</td>
+                <td>Madurai, India</td>
+              </tr>
+              <tr>
+                <td>Current Place</td>
+                <td>Malang, Indonesia</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>example@gmail.com</td>
+              </tr>
+            </tr>
+          </table>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- cardview 2 size 6 grid -->
+    <div class="grid_6">
+      <div class="card profile_floating">
+        <div class="card-content">
+          <p class="subhead_title">Progress</p>
+          <div class="divider custom"></div>
+          <table class="material_table">
+            <tr>
+              <th>Thread created</th>
+              <th>874 Threads</th>
+              <tr>
+                <td>Contributes to</td>
+                <td>488 threads</td>
+              </tr>
+              <tr>
+                <td>Answer correctly</td>
+                <td>97% on 488 threads</td>
+              </tr>
+            </tr>
+          </table>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- interest topic section -->
+  <div class="container_12">
+
+    <div class="grid_12">
+      <p class="subhead_title">Interest topic to Sundar Pichai</p>
+      <div class="divider custom"></div>
+    </div>
+
+
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="http://www.ozassignmenthelp.com.au/wp-content/uploads/2013/07/python-programming-assignment-help.png" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>Python</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="https://lh3.googleusercontent.com/HvR-MKlFckEL7KesQ5GtMlyLqIGvcXz8-maI8fWzYryTy8QcTLbnKC0X7AkSF_E8Ew=w300" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>Java</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="https://www.bermotech.com/wp-content/uploads/2014/06/iOS-Swift-Programming.png" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>Swift</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="http://gsmportal.co/wp-content/uploads/2017/05/google-introduces-assist-for-kotlin-programming-language-delivery-with-android-studio-threezero.jpg" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>Kotlin</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="http://1.bp.blogspot.com/-qcQAzVSA0I8/Vlf1A7hSTcI/AAAAAAAAGuo/M3G8Z8ugddM/s1600/bashscriptinglogo.png" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>Bash</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="https://2.bp.blogspot.com/-1T3QTIy91ss/VvTp2phRXuI/AAAAAAAAA_c/wA6Ww9Qj8lwXUIfitEtvWnAMEdWSvjBNw/s400/unix-shell.png" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>Shell</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/cf/e4/b1/cfe4b1de7406ff78e5f710f27cd7430f--learn-programming-programming-tutorial.jpg" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>C#</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="https://udemy-images.udemy.com/course/750x422/933848_3b86_3.jpg" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>Go</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="http://www.pascal-programming.info/images/pp-logo.png" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>Pascal</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="https://betanews.com/wp-content/uploads/2016/11/C-language.jpg" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>C</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="https://lh3.googleusercontent.com/3vGlLyKkKC46G1qqiqyKf0jeOyUtiZk5NxOxeuRJOfP4aZzCob9kabZX252mUmVAHA=w300" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>C++</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid_2">
+      <a href="#" class="href_black">
+        <div class="card">
+          <div class="card-image" id="card_image">
+            <img src="http://byterevel.com/wp-content/uploads/2011/06/objc.png" id="card_image_hasil_cari">
+          </div>
+          <div class="card-content">
+            <p>Objective - C</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="container_24">
+
+    <div class="grid_24">
+      <div class="card">
+        <div class="card-content">
+          <p class="footer_setup">©2017 Lutfi - Arifin - Levi. All right reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
