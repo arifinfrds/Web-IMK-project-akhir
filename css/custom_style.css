@@ -11,8 +11,12 @@
   text-align: center;
 }
 
-.nav-wrapper.custom {
+.nav-wrapper.custom, .nav-content.custom {
   background-color: #009688;
+}
+
+.nav-content.custom.profile {
+  height: 200px;
 }
 
 
@@ -69,6 +73,7 @@
 .waves-effect.waves-light.btn.custom {
   background-color: #FFC400;
 }
+
 .waves-effect.waves-light.btn.custom.1 {
   background-color: #FFC400;
 }
@@ -127,4 +132,16 @@
 
 #container_button_lain_detail_thread {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card.profile_floating {
+  margin-top: -50px;
+}
+
+.material_table {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.material_table_text {
+  margin: 8px;
 }
