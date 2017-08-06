@@ -1,136 +1,192 @@
 <html>
 
-  <head>
-    <link rel="stylesheet" href="grid.css" />
-    <style>
-      header{
-        width:100%;
-        position:absolute;
-        top:0;
-        left:0;
-        padding: 1em;
-        color: white;
-        text-align: left;
-        background-color: #009688;
-      }
+<head>
+  <link rel="stylesheet" href="grid.css" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
 
-      img {
-        width: 100%;
-        height: auto;
-      }
-    </style>
-  </head>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <header>
-      Home
-    </header>
-    <div class="grid">
+  <link type="text/css" rel="stylesheet" href="css/min/960.css" media="screen,projection" />
+  <link rel="stylesheet" href="css/960-responsive.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/custom_style.css" media="screen,projection" />
+  <style>
+    header {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1em;
+      color: white;
+      text-align: left;
+      background-color: #009688;
+    }
 
-      <div class="row">
-        <div class="column-1">
+    img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
 
+<body>
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <!-- container sepanjang 24 navbar -->
+  <div class="container_24">
+    <!-- baris untuk navbar -->
+    <div class="grid_24">
+      <nav>
+        <!-- navbar -->
+        <div class="nav-wrapper custom">
+          <a href="#" class="brand-logo">Home</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <!-- menu untuk desktop -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+          <!-- menu untuk mobile screen -->
+          <ul class="side-nav" id="mobile-demo">
+            <li>
+              <!-- container menu header -->
+              <div class="navigation_drawer_header">
+                <!-- container text di menu -->
+                <div class="container_text_navigation_drawer_header">
+                  <p>user@example.com</p>
+                  <p>nama user</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
         </div>
-        <div class="column-3">
-          <h1>Learn. Code. Fun.</h1>
-          <p>
-            With [Nama Apps] you can do MORE
-            than just CODE.
-          </p>
-          <p>
-            Learn CODE like never before, have
-            FUN with it.
-          </p>
-        </div>
-        <div class="column-2">
+      </nav>
+    </div>
+  </div>
 
-        </div>
-        <div class="column-3">
-            <h1>Just For You</h1>
-            <div class="column-3">
-                <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" />
-                Java
-            </div>
-            <div class="column-3">
-                <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" />
-                Python
-            </div>
-            <div class="column-3">
-                <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" />
-                Kotlin
-            </div>
-            <div class="column-3">
-                <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" />
-                PHP
-            </div>
-            <div class="column-3">
-                <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" />
-                Javascript
-            </div>
-            <div class="column-3">
-                <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" />
-                Other
-            </div>
-        </div>
+  <!-- handle navigation drawer saat screen mobile -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".button-collapse").sideNav();
+    })
+  </script>
+
+  <div class="grid">
+
+    <div class="row">
+      <div class="column-1">
 
       </div>
-
-      <div class="row">
-        <div class="column-1">
-
-        </div>
-        <div class="column-8">
-          <h1>Popular Discussion</h1>
-          <div class="column-8">
-            <p>
-              <h3>Array Index out of bounds?</h3>
-              Blablablablablablabla
-            </p>
-            <p>
-              <h3>Array Index out of bounds?</h3>
-              Blablablablablablabla
-            </p>
-            <p>
-              <h3>Array Index out of bounds?</h3>
-              Blablablablablablabla
-            </p>
-          </div>
-        </div>
+      <div class="column-3">
+        <h1>Learn. Code. Fun.</h1>
+        <p>
+          With [Nama Apps] you can do MORE than just CODE.
+        </p>
+        <p>
+          Learn CODE like never before, have FUN with it.
+        </p>
       </div>
+      <div class="column-2">
 
-      <div class="row">
-        <h1 style="text-align:center;">Connect With other Programer. Worldwide.</h1>
-        <div class="column-1">
-
-        </div>
-        <div class="column-3">
-          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" />
-        </div>
-        <div class="column-2">
-
-        </div>
-        <div class="column-3">
-          <p>
-            You can join groups of professional programmers
-            all around the world.
-          </p>
-        </div>
       </div>
-
-      <div class="row">
-        <div class="column-1">
-
+      <div class="column-3">
+        <h1>Just For You</h1>
+        <div class="column-3">
+          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> Java
         </div>
         <div class="column-3">
-          <h1>Join [Nama App] Today</h1>
-          <p>
-            Learn Programming with the communities
-          </p>
-          <button class="button" name="getstart">Get Started</button>
+          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> Python
+        </div>
+        <div class="column-3">
+          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> Kotlin
+        </div>
+        <div class="column-3">
+          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> PHP
+        </div>
+        <div class="column-3">
+          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> Javascript
+        </div>
+        <div class="column-3">
+          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> Other
         </div>
       </div>
 
     </div>
-  </body>
+
+    <div class="row">
+      <div class="column-1">
+
+      </div>
+      <div class="column-8">
+        <h1>Popular Discussion</h1>
+        <div class="column-8">
+          <p>
+            <h3>Array Index out of bounds?</h3>
+            Blablablablablablabla
+          </p>
+          <p>
+            <h3>Array Index out of bounds?</h3>
+            Blablablablablablabla
+          </p>
+          <p>
+            <h3>Array Index out of bounds?</h3>
+            Blablablablablablabla
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <h1 style="text-align:center;">Connect With other Programer. Worldwide.</h1>
+      <div class="column-1">
+
+      </div>
+      <div class="column-3">
+        <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" />
+      </div>
+      <div class="column-2">
+
+      </div>
+      <div class="column-3">
+        <p>
+          You can join groups of professional programmers all around the world.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column-1">
+
+      </div>
+      <div class="column-3">
+        <h1>Join [Nama App] Today</h1>
+        <p>
+          Learn Programming with the communities
+        </p>
+        <button class="button" name="getstart">Get Started</button>
+      </div>
+    </div>
+
+  </div>
+</body>
 
 </html>
