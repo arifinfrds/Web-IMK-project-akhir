@@ -57,7 +57,7 @@
 
   <!-- handle navigation drawer saat screen mobile -->
   <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
       $(".button-collapse").sideNav();
     })
   </script>
@@ -85,11 +85,15 @@
 
           <!-- question content -->
           <br>
-          <p>I am attempting to create a collection view that looks like the schematic below. The centre item will always have ‘focus’ and be larger, its quite a bit like the cover flow concept:</p><br>
+          <p>I am attempting to create a collection view that looks like the schematic below. The centre item will always have
+            ‘focus’ and be larger, its quite a bit like the cover flow concept:</p><br>
           <a href="#">
             <p>http://s13.postimg.org/n6vzil213/layout_schematic.png</p>
           </a><br>
-          <p>I can achieve this with a UICollectionViewFlowLayout, but I want the bottom cell (3) to animate larger and the middle cell (2) to animate smaller as I s croll? I assume I need to do some math with the scroll view delegate methods.</p><br>
+          <p>I can achieve this with a UICollectionViewFlowLayout, but I want the bottom cell (3) to animate larger and the
+            middle cell (2) to animate smaller as I s croll? I assume I need to do some math with the scroll view delegate
+            methods.
+          </p><br>
           <p>Any idea on how to achieve this?</p><br>
 
           <div class="container_info_user_tanya_jawab">
@@ -171,9 +175,11 @@
           <ol>
             <li>Create a UICollectionViewFlowLayout subclass</li>
             <li>Override shouldInvalidateLayoutForBoundsChange: and return YES</li>
-            <li>Override layoutAttributesForElementsInRect: and layoutAttributesForItemAtIndexPath:. Call the super implementation to get the standard FlowLayout values.</li>
-            <li>Create a method that both the methods from step #3 call that looks changes the layout attributes of the items based on their distance away from the center of the collection view’s center. Use math to set the correct itemSize / transform /
-              3D transform for the items.</li>
+            <li>Override layoutAttributesForElementsInRect: and layoutAttributesForItemAtIndexPath:. Call the super implementation
+              to get the standard FlowLayout values.</li>
+            <li>Create a method that both the methods from step #3 call that looks changes the layout attributes of the items
+              based on their distance away from the center of the collection view’s center. Use math to set the correct itemSize
+              / transform / 3D transform for the items.</li>
           </ol>
           <br>
           <p>Here’s a super rough example that sort of does what you’re looking for, without the correct math.</p><br>
@@ -268,9 +274,8 @@
 
   </div>
 
-
+  <!-- footer -->
   <div class="container_24">
-
     <div class="grid_24">
       <div class="card">
         <div class="card-content">
