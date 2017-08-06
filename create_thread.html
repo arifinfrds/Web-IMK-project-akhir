@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="grid.css" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      header {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1em;
+        color: white;
+        text-align: left;
+        background-color: #009688;
+      }
+
+      article {
+        padding-top: 4em;
+        padding-left: 2em;
+        text-align: center;
+      }
+
+      .form {
+        text-align: left;
+        width: 50%;
+        height: 200px;
+        float: left;
+      }
+
+      .text {
+        margin-left: 50%;
+        height: 200px;
+      }
+
+      input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: ridge;
+        /*border-bottom-color: #FFC400;*/
+      }
+
+      .button {
+        background-color: #FFC400;
+        border: none;
+        color: white;
+        padding: 5px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      footer {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        padding: 1em;
+        color: white;
+        text-align: center;
+        background-color: #009688;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Create Thread</header>
+    <!--container-->
+    <div class="container">
+      <!--row-->
+      <div class="row">
+        <!--column kosong untuk tabbing-->
+        <div class="column-3">
+
+        </div>
+        <!--column isi form dkk-->
+        <div class="column-6">
+          <h2 style="text-align:center;">Create your own thread.</h2>
+          <br><br>
+          <form action="" method="post">
+            <input type="text" name="title" placeholder="Thread name"/>
+            <br><br>
+            <h3>Description</h3>
+            <textarea rows="10" cols="70">
+            </textarea>
+            <br><br>
+            <!--untuk tags ku kasih text area aja-->
+            <h3>Tags</h3>
+            <textarea rows="4" cols="70">
+            </textarea>
+            <br><br>
+            <input type="submit" value="Create!" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
