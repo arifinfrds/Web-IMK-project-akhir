@@ -35,17 +35,34 @@
         <div class="nav-wrapper custom">
           <a href="#" class="brand-logo">About Us</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <!-- menu untuk desktop -->
           <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="login.html">Logout</a></li>
           </ul>
+          <!-- menu untuk mobile screen -->
           <ul class="side-nav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+            <li>
+              <!-- container menu header -->
+              <div class="navigation_drawer_header">
+                <!-- container text di menu -->
+                <div class="container_text_navigation_drawer_header">
+                  <p>user@example.com</p>
+                  <p>nama user</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="login.html">Logout</a></li>
           </ul>
         </div>
       </nav>
@@ -55,7 +72,7 @@
 
   <!-- handle navigation drawer saat screen mobile -->
   <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
       $(".button-collapse").sideNav();
     })
   </script>
@@ -64,7 +81,7 @@
 
   <div class="row">
     <div class="container_12">
-      <h3 class="centered_header">Know Us Better.</h3>
+      <p class="subhead_title main">Know Us Better.</p>
     </div>
   </div>
 
@@ -79,7 +96,8 @@
         <h5>Overview</h5>
         <div class="card">
           <div class="card-content">
-            <p>[Nama App] is a world wide programming forum that can help you out learning many programming language and meets other programmer.
+            <p>[Nama App] is a world wide programming forum that can help you out learning many programming language and meets
+              other programmer.
             </p>
           </div>
         </div>
