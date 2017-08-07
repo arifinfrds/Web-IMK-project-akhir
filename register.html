@@ -4,10 +4,20 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link type="text/css" rel="stylesheet" href="css/min/960.css" media="screen,projection" />
+  <link rel="stylesheet" href="css/960-responsive.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/custom_style.css" media="screen,projection" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Roboto+Mono" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <title>Register</title>
 
   <style>
     header {
@@ -76,12 +86,64 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
 
-  <header>
-    Register
-  </header>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <!-- container buat navbar -->
+  <div class="container_24">
+    <!-- panjang navbar ngambil jatah 24 grid containernya -->
+    <div class="grid_24">
+      <nav>
+        <div class="nav-wrapper custom">
+          <a href="#" class="brand-logo">Register</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <!-- menu untuk desktop -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="about_us.html">About</a></li>
+          </ul>
+          <!-- menu untuk mobile screen -->
+          <ul class="side-nav" id="mobile-demo">
+            <li>
+              <!-- container menu header -->
+              <div class="navigation_drawer_header">
+                <!-- container text di menu -->
+                <div class="container_text_navigation_drawer_header">
+                  <p>user@example.com</p>
+                  <p>Nama user</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li><a href="about_us.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  </div>
+
+  <!-- handle navigation drawer saat screen mobile -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".button-collapse").sideNav();
+    })
+
+  </script>
+
+  <div class="container_12">
+    <div class="container_12">
+      <p class="subhead_title main">Know Programming Better.</p>
+    </div>
+  </div>
+
   <article>
-    Know Programming Better With [Nama Aplikasi]
-    <br><br><br><br><br><br>
     <div class="form">
       <form action="" method="post">
         <input type="text" name="email" placeholder="Email" />
