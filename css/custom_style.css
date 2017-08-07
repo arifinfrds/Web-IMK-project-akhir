@@ -197,6 +197,15 @@
   font-size: 34px;
 }
 
+.subhead_title.main2 {
+  text-align: center;
+  font-size: 80px;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+
+
 .navigation_drawer_header {
   background-color: #009688;
   width: 100%;
@@ -209,4 +218,9 @@
   padding-left: 24px;
   padding-bottom: 24px;
   padding-right: 24px;
+}
+
+#card_image_popular_discussion {
+  width: 74px;
+  height: 74px;
 }
