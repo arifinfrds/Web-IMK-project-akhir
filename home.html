@@ -1,194 +1,292 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="grid.css" />
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
 
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link type="text/css" rel="stylesheet" href="css/min/960.css" media="screen,projection" />
-  <link rel="stylesheet" href="css/960-responsive.css" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link type="text/css" rel="stylesheet" href="css/custom_style.css" media="screen,projection" />
-  <style>
-    header {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 1em;
-      color: white;
-      text-align: left;
-      background-color: #009688;
-    }
+    <link type="text/css" rel="stylesheet" href="css/min/960.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/960-responsive.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/custom_style.css" media="screen,projection" />
 
-    img {
-      width: 100%;
-      height: auto;
-    }
-  </style>
+    <link href="https://fonts.googleapis.com/icon?family=Roboto+Mono" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title>Home</title>
+
 </head>
 
 <body>
 
 
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 
-  <!-- container sepanjang 24 navbar -->
-  <div class="container_24">
-    <!-- baris untuk navbar -->
-    <div class="grid_24">
-      <nav>
-        <!-- navbar -->
-        <div class="nav-wrapper custom">
-          <a href="#" class="brand-logo">Home</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <!-- menu untuk desktop -->
-          <ul class="right hide-on-med-and-down">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="explore.html">Explore</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="about_us.html">About</a></li>
-            <li><a href="login.html">Logout</a></li>
-          </ul>
-          <!-- menu untuk mobile screen -->
-          <ul class="side-nav" id="mobile-demo">
-            <li>
-              <!-- container menu header -->
-              <div class="navigation_drawer_header">
-                <!-- container text di menu -->
-                <div class="container_text_navigation_drawer_header">
-                  <p>user@example.com</p>
-                  <p>nama user</p>
+    <!-- container buat navbar -->
+    <div class="container_24">
+        <!-- panjang navbar ngambil jatah 24 grid containernya -->
+        <div class="grid_24">
+            <nav>
+                <div class="nav-wrapper custom">
+                    <a href="#" class="brand-logo">Home</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <!-- menu untuk desktop -->
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="about_us.html">About</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                    <!-- menu untuk mobile screen -->
+                    <ul class="side-nav" id="mobile-demo">
+                        <li>
+                            <!-- container menu header -->
+                            <div class="navigation_drawer_header">
+                                <!-- container text di menu -->
+                                <div class="container_text_navigation_drawer_header">
+                                    <p>user@example.com</p>
+                                    <p>Nama user</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="about_us.html">About</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
                 </div>
-              </div>
-            </li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="explore.html">Explore</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li>
-              <div class="divider"></div>
-            </li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="about_us.html">About</a></li>
-            <li><a href="login.html">Logout</a></li>
-          </ul>
+            </nav>
         </div>
-      </nav>
-    </div>
-  </div>
-
-  <!-- handle navigation drawer saat screen mobile -->
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(".button-collapse").sideNav();
-    })
-  </script>
-
-  <div class="grid">
-
-    <div class="row">
-      <div class="column-1">
-
-      </div>
-      <div class="column-3">
-        <h1>Learn. Code. Fun.</h1>
-        <p>
-          With [Nama Apps] you can do MORE than just CODE.
-        </p>
-        <p>
-          Learn CODE like never before, have FUN with it.
-        </p>
-      </div>
-      <div class="column-2">
-
-      </div>
-      <div class="column-3">
-        <h1>Just For You</h1>
-        <div class="column-3">
-          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> Java
-        </div>
-        <div class="column-3">
-          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> Python
-        </div>
-        <div class="column-3">
-          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> Kotlin
-        </div>
-        <div class="column-3">
-          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> PHP
-        </div>
-        <div class="column-3">
-          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> Javascript
-        </div>
-        <div class="column-3">
-          <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" /> Other
-        </div>
-      </div>
 
     </div>
 
-    <div class="row">
-      <div class="column-1">
+    <!-- handle navigation drawer saat screen mobile -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".button-collapse").sideNav();
+        })
+    </script>
 
-      </div>
-      <div class="column-8">
-        <h1>Popular Discussion</h1>
-        <div class="column-8">
-          <p>
-            <h3>Array Index out of bounds?</h3>
-            Blablablablablablabla
-          </p>
-          <p>
-            <h3>Array Index out of bounds?</h3>
-            Blablablablablablabla
-          </p>
-          <p>
-            <h3>Array Index out of bounds?</h3>
-            Blablablablablablabla
-          </p>
+    <!-- container semua content size 12 grid -->
+    <div class="container_12">
+
+        <!-- title page -->
+        <div class="grid_12">
+            <p class="subhead_title main2">CODE.IN</p>
         </div>
-      </div>
+
+        <!-- section learn code fun -->
+        <div class="grid_12">
+            <div class="card">
+                <div class="card-content">
+                    <p class="subhead_title main">Learn. Code. Fun.</p>
+                    CODE.IN is well known, trusted online community for people to learn, share​ ​their programming ​knowledge, and build their
+                    careers.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- section Just for you deprecated -->
+        <!-- <div class="grid_6">
+            <div class="card">
+                <div class="card-content">
+                    <p class="subhead_title main">Just for You.</p>
+                    <div class="grid_3">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="subhead_title main">Just for You.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- section popular discussion -->
+        <div class="grid_12">
+            <p class="subhead_title main">Popular Discussion.</p>
+            <p> with [nama app], you can blablablab with [nama app], you can blablablab with [nama app], you can blablablab</p>
+        </div>
+
+        <!-- section content popular discussion -->
+        <!-- item card popular discussion -->
+        <div class="grid_4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="https://www.bermotech.com/wp-content/uploads/2014/06/iOS-Swift-Programming.png" id="card_image_popular_discussion">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Swift</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item card popular discussion -->
+        <div class="grid_4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="https://lh3.googleusercontent.com/HvR-MKlFckEL7KesQ5GtMlyLqIGvcXz8-maI8fWzYryTy8QcTLbnKC0X7AkSF_E8Ew=w300" id="card_image_popular_discussion">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Java</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item card popular discussion -->
+        <div class="grid_4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="http://www.ozassignmenthelp.com.au/wp-content/uploads/2013/07/python-programming-assignment-help.png" id="card_image_popular_discussion">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item card popular discussion -->
+        <div class="grid_4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="http://gsmportal.co/wp-content/uploads/2017/05/google-introduces-assist-for-kotlin-programming-language-delivery-with-android-studio-threezero.jpg"
+                        id="card_image_popular_discussion">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Kotlin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item card popular discussion -->
+        <div class="grid_4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="https://udemy-images.udemy.com/course/750x422/933848_3b86_3.jpg" id="card_image_popular_discussion">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Go</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item card popular discussion -->
+        <div class="grid_4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="https://betanews.com/wp-content/uploads/2016/11/C-language.jpg" id="card_image_popular_discussion">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Struct in C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item card popular discussion -->
+        <div class="grid_4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="http://gsmportal.co/wp-content/uploads/2017/05/google-introduces-assist-for-kotlin-programming-language-delivery-with-android-studio-threezero.jpg"
+                        id="card_image_popular_discussion">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Android Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item card popular discussion -->
+        <div class="grid_4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="https://lh3.googleusercontent.com/3vGlLyKkKC46G1qqiqyKf0jeOyUtiZk5NxOxeuRJOfP4aZzCob9kabZX252mUmVAHA=w300" id="card_image_popular_discussion">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>C++</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- item card popular discussion -->
+        <div class="grid_4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="https://lh3.googleusercontent.com/HvR-MKlFckEL7KesQ5GtMlyLqIGvcXz8-maI8fWzYryTy8QcTLbnKC0X7AkSF_E8Ew=w300" id="card_image_popular_discussion">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Java Garbage Collection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- section connect with other programmer world wide -->
+        <div class="grid_12">
+            <div class="card">
+                <div class="card-content">
+                    <p class="subhead_title main">Connect With Other Programmer World Wide</p>
+                    <p> with [nama app], you can blablablab with [nama app], you can blablablab with [nama app], you can blablablab</p>
+                </div>
+                <div class="card-image">
+                    <img src="http://us.ctp-airpollutioncontrol.com/uploads/tx_ajadomaps/worldmap_07.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- section Join [Nama App] today. Learn programming with the communities. -->
+        <div class="grid_12">
+            <div class="card">
+                <div class="card-content">
+                    <p class="subhead_title main">Join CODE.IN today. Learn programming with the communities.</p>
+                    <form class="" action="login.html" method="post">
+                        <input class="waves-effect waves-light btn custom" type="submit" name="" value="JOIN">
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="row">
-      <h1 style="text-align:center;">Connect With other Programer. Worldwide.</h1>
-      <div class="column-1">
+    <div class="container_24">
 
-      </div>
-      <div class="column-3">
-        <img src="E:\gmbr\artworks-000008224636-widclt-t500x500.jpg" />
-      </div>
-      <div class="column-2">
-
-      </div>
-      <div class="column-3">
-        <p>
-          You can join groups of professional programmers all around the world.
-        </p>
-      </div>
+        <div class="grid_24">
+            <div class="card">
+                <div class="card-content">
+                    <p class="footer_setup">©2017 Lutfi - Arifin - Levi. All right reserved</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="row">
-      <div class="column-1">
 
-      </div>
-      <div class="column-3">
-        <h1>Join [Nama App] Today</h1>
-        <p>
-          Learn Programming with the communities
-        </p>
-        <button class="button" name="getstart">Get Started</button>
-      </div>
-    </div>
 
-  </div>
+
+
 </body>
 
 </html>
