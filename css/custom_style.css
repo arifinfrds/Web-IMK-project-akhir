@@ -141,15 +141,13 @@
   margin-top: -50px;
 }
 
-
-/* @media only screen and (max-width: 768px) {
-
+@media screen and (max-width: 1024px) {
+  /*Your style put here*/
+  /* For mobile phones: */
+  .card.profile_floating {
+    margin-top: 24px;
+  }
 }
-  
-@media screen and (max-width: 1024px){
-
-
-} */
 
 @media screen and (max-width: 768px) {
   /*Your style put here*/
