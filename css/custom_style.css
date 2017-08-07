@@ -11,7 +11,8 @@
   text-align: center;
 }
 
-.nav-wrapper.custom, .nav-content.custom {
+.nav-wrapper.custom,
+.nav-content.custom {
   background-color: #009688;
 }
 
@@ -108,7 +109,8 @@
   height: 24px;
 }
 
-.info_user_header, .info_user_sub_header {
+.info_user_header,
+.info_user_sub_header {
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -139,12 +141,55 @@
   margin-top: -50px;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .card.profile_floating {
+
+/* @media only screen and (max-width: 768px) {
+
+}
+  
+@media screen and (max-width: 1024px){
+
+
+} */
+
+@media screen and (max-width: 768px) {
+  /*Your style put here*/
+  /* For mobile phones: */
+  .card.profile_floating {
     margin-top: 24px;
-    }
-} 
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /*Your style put here*/
+  /* For mobile phones: */
+  .card.profile_floating {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*Your style put here*/
+  /* For mobile phones: */
+  .card.profile_floating {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /*Your style put here*/
+  /* For mobile phones: */
+  .card.profile_floating {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /*Your style put here*/
+  /* For mobile phones: */
+  .card.profile_floating {
+    margin-top: 24px;
+  }
+}
 
 .material_table {
   color: rgba(0, 0, 0, 0.5);
@@ -193,8 +238,8 @@
   padding-left: 24px;
   padding-right: 24px;
 }
-.search {
-}
+
+.search {}
 
 .nav-wrapper.custom_search {
   background-color: white;
@@ -211,8 +256,6 @@
   font-weight: lighter;
   color: rgba(0, 0, 0, 0.54);
 }
-
-
 
 .navigation_drawer_header {
   background-color: #009688;
